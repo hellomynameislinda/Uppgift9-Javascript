@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bish-Bosh</title>
+</head>
+
+<body>
+
+<script type="application/javascript">
+let fromNum = 1;
+let toNum = 100;
+
+let bishNum = 3;
+let boshNum = 4;
+
+for (let index = fromNum; index <= toNum; index++) {
+    if ((index % bishNum == 0) && (index % boshNum == 0))
+        console.log('Bish-Bosh');
+    else if (index % bishNum == 0)
+        console.log('Bish');
+    else if (index % boshNum == 0)
+        console.log('Bosh');
+    else
+        console.log(index);
+}
+
+
+</script>
+
+</body>
+</html>
